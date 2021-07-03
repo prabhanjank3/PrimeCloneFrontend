@@ -27,10 +27,16 @@ export default (props) => {
         <Col sm={2}>
           <img className="cart-item-image" src={props.href} alt={props.Title} />
         </Col>
-        <Col sm={1}>{props.Title}</Col>
-        <Col sm={1}>{props.price}</Col>
-        <Col sm={1}>{props.quantity}</Col>
-        <Col sm={3}>
+        <Col sm={3} className="cart-item-row">
+          <div className="cart-item-row-content">{props.Title}</div>
+        </Col>
+        <Col sm={2} className="cart-item-row">
+          <div className="cart-item-row-content">{props.price}</div>
+        </Col>
+        <Col sm={1} className="cart-item-row">
+          <div className="cart-item-row-content">{props.quantity}</div>
+        </Col>
+        <Col sm={4}>
           <AddToCartButton
             itemId={props.itemId}
             addToCart={addToCart}

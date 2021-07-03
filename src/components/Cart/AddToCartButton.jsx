@@ -11,23 +11,23 @@ export default (props) => {
   return (
     <Container>
       <Row>
-        <Col lg={3} sm={3}>
+        <Col lg={3} sm={3} className="cart-action-col">
           {props.itemMap.hasOwnProperty(props.itemId) ? (
-            <Button className="watch-now-btn" onClick={props.removeFromCart}>
+            <Button className="cart-action-btn" onClick={props.removeFromCart}>
               -
             </Button>
           ) : (
             <></>
           )}
         </Col>
-        <Col lg={6} sm={6}>
-          <Button className="watch-now-btn" onClick={addToCart}>
+        <Col lg={6} sm={6} className="cart-action-col">
+          <Button className="cart-action-btn" onClick={addToCart}>
             <FaCartPlus className="play-btn" />
             {props.itemMap[props.itemId]}
           </Button>
         </Col>
-        <Col lg={3} sm={3}>
-          <Button className="watch-now-btn" onClick={addToCart}>
+        <Col lg={3} sm={3} className="cart-action-col">
+          <Button className="cart-action-btn" onClick={addToCart}>
             +
           </Button>
         </Col>

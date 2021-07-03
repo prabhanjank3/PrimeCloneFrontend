@@ -68,6 +68,8 @@ body {
 .watch-now-btn {
   width: 100%;
   margin-bottom: 10px;
+  margin-left: 0px;
+  margin-right: 0px;
 }
 
 /* Homepage */
@@ -79,4 +81,26 @@ body {
 .movie-card-image {
   height: 200px;
   width: 170px;
+}
+
+/* Cart Page */
+.cart-item-list {
+}
+.cart-item-list-container {
+  /* border: 1px solid white; */
+}
+.cart-item-list-row {
+  margin: 10% 0px;
+}
+.cart-item-list-col {
+  border: 1px solid white;
+}
+.cart-action-col {
+  padding: 10px 1px;
+}
+.cart-action-btn {
+  width: 100%;
+}
+.total-cost-div {
+  margin: 1% 30%;
 }

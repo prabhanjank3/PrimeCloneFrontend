@@ -1,5 +1,5 @@
 const initialStore = {
-  isLoggedIn: true,
+  isLoggedIn: false,
   userID: "",
   firstName: "",
   home_display_data_loaded: false,
@@ -12,7 +12,6 @@ const initialStore = {
   }
 };
 const reducer = (state = initialStore, action) => {
-  console.log(action);
   if (action.type === "DATA_LOAD_UPDATE_STATE") {
     state = {
       ...state,
